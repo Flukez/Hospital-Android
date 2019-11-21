@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#01ed0b0b"
+    tools:context="com.android.hospitalapplication.Activities.Patient.RequestAppointmentActivity">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/pat_app_bar_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pat_app_bar_layout"
+        android:id="@+id/tv1"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="Choose Illness/Symptoms"
+        />
+
+    <Spinner
+        android:id="@+id/typeofproblem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_corner"
+        android:layout_below="@+id/tv1"/>
+
+
+
+<LinearLayout
+    android:visibility="gone"
+    android:layout_centerInParent="true"
+    android:id="@+id/doctordetails"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/typeofproblem"
+    android:layout_above="@+id/preferred_appointment_date">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pat_app_bar_layout"
+        android:id="@+id/tv2"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="Choose Doctor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/doctor_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:spinnerMode="dialog" />
+        <FrameLayout
+            android:id="@+id/more_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:background="@null">
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_info_outline_black_24dp"
+            android:layout_gravity="center"
+            android:tooltipText="More Info"
+        android:padding="5dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="More info"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!--Number-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pat_app_bar_layout"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Contact No."
+            />
+    <TextView
+        android:clickable="false"
+        android:contextClickable="false"
+        android:id="@+id/doctorcontactnumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Doctor Contact Number"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:textAllCaps="true"
+        />
+
+        <ImageButton
+            android:id="@+id/calldoctor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_call_black_24dp"
+            android:padding="5dp"
+            android:foreground="?attr/selectableItemBackground"
+            />
+    </LinearLayout>
+
+    <!--Address-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pat_app_bar_layout"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Room No."
+            />
+    <TextView
+        android:clickable="false"
+        android:contextClickable="false"
+        android:id="@+id/doctoraddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:text="Doctor Address"
+        android:gravity="center_vertical"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+         />
+    </LinearLayout>
+</LinearLayout>
+
+        <EditText
+            android:id="@+id/describe"
+            android:layout_above="@+id/preferred_appointment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe Your Problem(Optional)"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/md_black_1000"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:lines="2"
+            android:textColorHint="#80000000"
+            android:minLines="2"/>
+
+    <Button
+        android:layout_above="@id/button"
+        android:id="@+id/preferred_appointment_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Select Date"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textColorHint="@color/md_white_1000"
+        android:background="@color/md_red_400"
+        android:textColor="@color/md_white_1000"/>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/Request_Appointment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Request Appointment"
+            android:background="@color/md_blue_400"
+            android:textColor="@color/md_grey_100"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <include
+        layout="@layout/bottom_layout"
+        android:id="@+id/bottom_sheet1"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

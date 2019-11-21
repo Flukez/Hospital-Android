@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+       >
+    <NumberPicker
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:background="@null"
+         style="@style/DividerTheme"
+        android:id="@+id/hours"></NumberPicker>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text=":"
+            android:gravity="center"
+            android:padding="8dp"/>
+    <NumberPicker
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:dividerPadding="8dp"
+        style="@style/DividerTheme"
+
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_weight="1"
+        android:id="@+id/minutes"></NumberPicker>
+
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/am_pm"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown"></Spinner>
+
+    </LinearLayout>
+
+</RelativeLayout>

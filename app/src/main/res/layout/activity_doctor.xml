@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.hospitalapplication.Activities.Doctor.DoctorActivity">
+
+   <include
+       layout="@layout/app_bar_layout"
+       android:id="@+id/doc_app_bar_layout"/>
+
+    <include
+        android:id="@+id/content_doc"
+        layout="@layout/content_doctor"
+        android:layout_below="@+id/doc_app_bar_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation_doc"/>
+
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation_doc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="8dp"
+
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/doc_navigation_items" />
+
+</RelativeLayout>

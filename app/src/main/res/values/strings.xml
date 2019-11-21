@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">A.S.H.A</string>
+    <string name="title_activity_patient">PatientActivity</string>
+    <string name="title_activity_doctor">DoctorActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to login -->
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string-array name="blood_groups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="speciality">
+        <item>General Physician</item>
+        <item>ENT</item>
+        <item>Gynecology</item>
+        <item>Pediatrics</item>
+        <item>Ophthalmology</item>
+        <item>Dermatology</item>
+        <item>Cardiology</item>
+        <item>Neurology</item>
+        <item>Dentistry</item>
+        <item>Gastroenterology</item>
+        <item>Urology</item>
+        <item>Orthopedics</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Sort By Date</item>
+        <item>Sort By Time</item>
+    </string-array>
+
+    <string-array name="problem">
+        <item>Select Your Problem</item>
+        <item>Cough and Cold</item>
+        <item>Fever</item>
+        <item>Migraine</item>
+        <item>Ear,Nose and Throat Problems</item>
+        <item>Female Reproductive System Related Problems</item>
+        <item>Baby Problems</item>
+        <item>Eyes Problems</item>
+        <item>Skin Problems</item>
+        <item>Heart Problems</item>
+        <item>Brain and Nervous System Problems</item>
+        <item>Teeth Issues</item>
+        <item>Digestive Problems</item>
+        <item>Male Reproductive System Problem</item>
+        <item>Body Pain</item>
+    </string-array>
+
+    <string-array name="time_slots">
+        <item >10:00-10:30</item>
+        <item >10:30-11:00</item>
+        <item >11:00-11:30</item>
+        <item >11:30-12:00</item>
+        <item >12:00-12:30</item>
+        <item >12:30-01:00</item>
+
+
+        <item >05:00-05:30</item>
+        <item >05:30-06:00</item>
+        <item >06:00-06:30</item>
+        <item >06:30-07:00</item>
+        <item >07:00-07:30</item>
+        <item >07:30-08:00</item>
+    </string-array>
+
+    <string-array name="time_zone">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+</resources>

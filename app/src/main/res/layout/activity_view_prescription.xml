@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_black_1000"
+    tools:context="com.android.hospitalapplication.Activities.Patient.ViewPrescriptionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/prescription"/>
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/prescription_bar_layout"/>
+</android.support.constraint.ConstraintLayout>

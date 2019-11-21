@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/about_us_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+
+    <LinearLayout
+        android:layout_below="@id/about_us_toolbar"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/e"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            app:cardBackgroundColor="#FCFCF4"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:cardCornerRadius="4dp"
+            android:textAlignment="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:src="@drawable/pat_back"/>
+
+
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:layout_width="110dp"-->
+                <!--android:layout_height="110dp"-->
+                <!--android:layout_above="@+id/upload_report"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:src="@drawable/jatin"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="Profile Info"-->
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_red_300"
+                android:text="Jatin Arora"
+                android:paddingBottom="4dp"
+                android:textColor="@color/md_white_1000"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_above="@+id/upload_report"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/q"
+                android:text="Profile Info" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/f"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            app:cardBackgroundColor="#FCFCF4"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pat_back"/>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_above="@+id/upload_report"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/avatar"
+                android:layout_gravity="center"
+                android:text="Profile Info"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:text="Manan Gupta"
+                android:background="@color/md_indigo_400"
+                android:textColor="@color/md_white_1000"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll"
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/i"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:cardCornerRadius="4dp"
+            android:textAlignment="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prateek Vijay"
+                android:paddingBottom="4dp"
+                android:background="@color/md_teal_400"
+                android:textColor="@color/md_white_1000"
+                app:cardBackgroundColor="#FCFCF4"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pat_back" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/upload_report"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:src="@drawable/e"
+                android:text="Profile Info" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/j"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FCFCF4"
+            app:cardCornerRadius="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pat_back"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_above="@+id/upload_report"
+                android:layout_gravity="center"
+                android:layout_margin="33dp"
+                android:src="@drawable/r"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_orange_400"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:text="Hitesh Yadav"
+                android:textColor="@color/md_white_1000"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_below="@id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/k"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FCFCF4"
+            android:layout_weight="1"
+            app:cardCornerRadius="4dp"
+            android:textAlignment="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pat_back"/>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/upload_report"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/avatar_fm"
+                android:layout_gravity="center"
+                android:text="Profile Info"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Pratibha Jain"
+                android:paddingBottom="4dp"
+                android:textColor="@color/md_white_1000"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/view_status"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:transitionGroup="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FCFCF4"
+            app:cardCornerRadius="4dp"
+            android:layout_weight="1"
+            android:textAlignment="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pat_back"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_above="@+id/upload_report"
+                android:layout_gravity="center"
+                android:layout_margin="33dp"
+                android:src="@drawable/t"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_green_500"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingBottom="4dp"
+                android:text="Kunal Sarna"
+                android:textColor="@color/md_white_1000"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

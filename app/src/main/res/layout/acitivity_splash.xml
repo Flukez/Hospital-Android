@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.hospitalapplication.Activities.SplashActivity"
+    android:id="@+id/splash_layout"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/md_black_1000"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A.S.H.A"
+        android:textColor="@color/md_green_700"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"/>
+     <!-- <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/l" /> -->
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gif"
+            android:scaleType="center"
+            android:src="@drawable/hb"
+           />
+
+
+</LinearLayout>

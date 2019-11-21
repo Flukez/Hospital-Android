@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_200"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.android.hospitalapplication.PatientActivity"
+        tools:showIn="@layout/activity_patient">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/set_appointment"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:transitionGroup="true"
+                android:backgroundTint="@color/md_yellow_800"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:cardCornerRadius="4dp"
+                android:textAlignment="center">
+
+
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_above="@+id/upload_report"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/request"
+                    android:layout_gravity="center"
+                    android:text="Profile Info"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request Appointment"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/view_status"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:transitionGroup="true"
+                android:backgroundTint="@color/md_indigo_A700"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="4dp"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_above="@+id/upload_report"
+                    android:layout_gravity="center"
+                    android:layout_margin="33dp"
+                    android:background="@drawable/check"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:paddingBottom="4dp"
+                    android:text="Appointment Status"
+                    android:textColor="@color/md_white_1000"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ll"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/upload_report"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:backgroundTint="@color/md_light_blue_400"
+                android:elevation="8dp"
+                android:transitionGroup="true"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="4dp"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_above="@+id/upload_report"
+                    android:background="@drawable/topcfsjpnlqiissunuyc"
+                    android:text="Profile Info"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Reports"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textAlignment="center"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/dietplan"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:transitionGroup="true"
+                app:cardBackgroundColor="#c3f4581b"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+
+                <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/upload_report"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ambulance"
+                />
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency"
+                android:layout_margin="1dp"
+                    android:textColor="@color/md_white_1000"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textAlignment="center"
+                    android:paddingBottom="4dp"
+                android:textStyle="bold"
+                />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/dietplan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/rectangle"-->
+                <!--android:clickable="true"-->
+                <!--android:elevation="4dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textAlignment="center">-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:layout_above="@+id/upload_report"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:background="@drawable/ic_ambulance"-->
+                    <!--android:backgroundTint="@color/md_red_800"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Emergency"-->
+                    <!--android:layout_margin="1dp"-->
+                    <!--android:layout_gravity="bottom|center_horizontal"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:background="#5e6ac8c4"-->
+                    <!--android:textStyle="bold"-->
+                    <!--/>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/dietplan"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:padding="20dp"-->
+            <!--android:transitionGroup="true"-->
+            <!--android:elevation="8dp"-->
+            <!--android:background="@color/md_red_500"-->
+            <!--android:text="Emergency"-->
+            <!--android:textColor="@color/md_white_1000" />-->
+
+    </RelativeLayout>
+</ScrollView>

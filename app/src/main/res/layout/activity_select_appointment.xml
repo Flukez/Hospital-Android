@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.hospitalapplication.Activities.Doctor.SelectAppointmentActivity">
+
+    <include
+        android:id="@+id/apt_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apt_app_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:clickable="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="Patient Details:-"
+        android:textStyle="italic" />
+
+
+
+
+            <!--Name-->
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:gravity="end"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Name :-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+
+            </LinearLayout>
+
+            <!--Gender-->
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:gravity="end"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Gender :-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+
+            </LinearLayout>
+
+            <!--Blood Group-->
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:gravity="end"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Blood Group:-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/bg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+
+            </LinearLayout>
+
+            <!--Contact Number-->
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:gravity="end"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Contact No.:-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+            </LinearLayout>
+
+            <!--Description-->
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:gravity="end"
+                    android:elevation="4dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Description:-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+            </LinearLayout>
+
+            <!--Preferred Date-->
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:gravity="end"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Preferred Date:-"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="#fff"
+                    android:clickable="false"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:textColor="@color/md_black_1000" />
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       >
+
+        <Button
+            android:id="@+id/decline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Decline Request"
+            android:textColor="@color/md_white_1000" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/md_green_600"
+            android:text="Set Appointment"
+            android:textColor="@color/md_white_1000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

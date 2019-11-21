@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/pat_app_bar_layout"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Report Name"
+            android:id="@+id/report_name"/>
+    </android.support.design.widget.TextInputLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    tools:context="com.android.hospitalapplication.Activities.Patient.UploadReportActivity">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:id="@+id/capturePhoto"
+        app:cardBackgroundColor="@color/md_grey_300"
+        android:elevation="8dp"
+        android:transitionGroup="true"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+    <ImageView
+         android:layout_centerInParent="true"
+         android:layout_margin="20dp"
+         android:text="Capture Photo"
+        android:layout_gravity="center"
+        android:background="@drawable/capture_photo"
+         android:layout_width="120dp"
+         android:layout_height="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take A Picture"
+            android:layout_margin="1dp"
+            android:layout_gravity="bottom|center"
+            android:textColor="@color/md_white_1000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:id="@+id/choosePhone"
+        app:cardBackgroundColor="@color/md_teal_300"
+        android:elevation="8dp"
+        android:transitionGroup="true"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+    <ImageView
+        android:layout_below="@id/capturePhoto"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@drawable/gallery"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Choose From Phone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select From Gallery"
+        android:layout_margin="1dp"
+        android:textColor="@color/md_white_1000"
+        android:layout_gravity="bottom|center"
+        android:textStyle="bold"
+        />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</LinearLayout>
